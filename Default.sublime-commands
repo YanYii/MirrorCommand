@@ -1,0 +1,7 @@
+[
+
+    { "caption": "Mirror: Cut ( 'ctrl+x' )", "command": "mirror_cut"},
+    { "caption": "Mirror: Copy ( 'ctrl+c' )", "command": "mirror_copy"},
+    { "caption": "Mirror: Paste ( 'ctrl+v' )", "command": "mirror_paste"}
+
+]
