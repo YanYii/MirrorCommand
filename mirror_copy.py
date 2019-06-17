@@ -11,4 +11,6 @@ class MirrorCopyCommand(sublime_plugin.TextCommand):
                 r = self.view.line(r)
             content = self.view.substr(r)
             contents.append(content)
-        sublime.set_clipboard('\n\n'.join(contents))
+        result = '\n'.join(contents)
+        sublime.set_clipboard(result)
+        sublime.status_message('Copied {} characters'.format(len(result)))

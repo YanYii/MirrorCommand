@@ -9,9 +9,10 @@ class MirrorCutCommand(sublime_plugin.TextCommand):
         for r in reversed(self.view.sel()):
             if r.empty():
                 r = self.view.line(r)
-                r = sublime.Region(r.a - 1, r.b)
+                r = sublime.Region(r.begin(), r.end() + 1)
             content = self.view.substr(r)
             contents.append(content)
             self.view.erase(edit, r)
-        print(contents)
-        sublime.set_clipboard('\n\n'.join([x for x in reversed(contents)]))
+        result = '\n'.join([x for x in reversed(contents)])
+        sublime.set_clipboard(result)
+        sublime.status_message('Cut {} characters.'.format(len(result)))
