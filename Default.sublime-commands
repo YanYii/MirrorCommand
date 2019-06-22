@@ -4,6 +4,6 @@
     { "caption": "Mirror: Copy ( 'ctrl+c' )", "command": "mirror_copy"},
     { "caption": "Mirror: Paste ( 'ctrl+v' )", "command": "mirror_paste"},
     { "caption": "Mirror: Transpose ( 'ctrl+t' )", "command": "mirror_transpose"},
-    { "caption": "Mirror: Left Delete ( 'backspace' )", "command": "mirror_left_delete"}
-
+    { "caption": "Mirror: Left Delete ( 'backspace' )", "command": "mirror_left_delete"},
+    { "caption": "Mirror: Right Delete ( 'delete' )", "command": "mirror_right_delete"}
 ]
